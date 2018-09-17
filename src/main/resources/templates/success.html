@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--导入Thymeleaf的语法提示-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>成功</h2>
+    <h1>失败</h1>
+    <div th:text="${hello}">this is div</div>
+    <hr/>
+
+    <h3 th:text="${singer}" th:each="singer:${singers}"></h3>
+    <hr/>
+    <h3>
+        <span th:each="singer:${singers}">[[${singer}]]</span>
+
+    </h3>
+</body>
+</html>
